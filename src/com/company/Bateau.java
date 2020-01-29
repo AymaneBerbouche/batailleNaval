@@ -1,5 +1,6 @@
 package com.company;
 
+import javax.swing.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -8,46 +9,16 @@ public class Bateau {
     private String nom;
     private Orientation orient;
     private Coordonees coordo;
+    private ModeleBoat typeboat;
+    private static HashMap<Integer, Integer> ListeCoordo = new HashMap<>();
+    private static int counter;
 
-    public Bateau(String nom, Orientation orient, Coordonees coordo) {
+    public Bateau(String nom, Orientation orient, Coordonees coordo, ModeleBoat typeboat) {
         this.nom = nom;
         this.orient = orient;
         this.coordo = coordo;
-
-    }
-    public HashMap<String, Integer> CreerBateau() {
-        List<Integer> absice = new ArrayList<>();
-        List<Character> ordonnee = new ArrayList();
-        HashMap<String, Integer> listeCases = new HashMap();
-        Plateau plat = new Plateau(absice,ordonnee,listeCases);
-        switch (orient) {
-            case NORD:
-                for (int i = coordo.getX(); i != i - 2; i--) {
-                    if (plat.getOrdonnee().contains(coordo.getY()) && plat.getAbsice().contains(coordo.getX())) {
-                        plat.ListeCases.put(coordo.getY() + Integer.toString(coordo.getX() - i), 1);
-                    }
-                }
-            case SUD: {
-                for (int i = coordo.getX(); i != i + 2; i++) {
-                    if (plat.getOrdonnee().contains(coordo.getY()) && plat.getAbsice().contains(coordo.getX()))
-                        plat.ListeCases.put(coordo.getY() + Integer.toString(coordo.getX() + i), 1);
-                }
-            }
-            case OUEST: {
-                for (int i = coordo.getY(); i != i + 2; i++) {
-                    if (plat.getOrdonnee().contains(coordo.getY()) && plat.getAbsice().contains(coordo.getX()))
-                        plat.ListeCases.put(coordo.getY() + Integer.toString(coordo.getY() + i), 1);
-                }
-            }
-            case EST: {
-                for (int i = coordo.getY(); i != i - 2; i--) {
-                    if (plat.getOrdonnee().contains(coordo.getY()) && plat.getAbsice().contains(coordo.getX()))
-                        plat.ListeCases.put(coordo.getY() + Integer.toString(coordo.getY() + i), 1);
-
-                }
-            }
-        }
-        return plat.ListeCases;
+        this.typeboat = typeboat;
+        addCoordonne();
     }
 
     public String getNom() {
@@ -58,10 +29,36 @@ public class Bateau {
         return orient;
     }
 
+    public Coordonees getCoordo() {
+        return coordo;
+    }
+
+    public ModeleBoat getTypeboat() {
+        return typeboat;
+    }
+
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
     public void setOrient(Orientation orient) {
         this.orient = orient;
     }
 
+    public void setCoordo(Coordonees coordo) {
+        this.coordo = coordo;
+    }
 
+    public void setTypeboat(ModeleBoat typeboat) {
+        this.typeboat = typeboat;
+    }
+
+    public HashMap<Integer, Integer> addCoordonne()    {
+        ListeCoordo.put(coordo.getAbsice(), coordo.getOrdonne());
+        return(ListeCoordo);
+    }
+    public HashMap<Integer, Integer> getListeBateau(){
+        return ListeCoordo;
+    }
 
 }

@@ -1,27 +1,31 @@
 package com.company;
-import java. util. ArrayList;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Coordonees {
-    String ordonnee;
 
-    public Coordonees(String ordonnee) {
+    private Integer ordonnee;
+    private Integer absice;
+
+    public Coordonees(Integer ordonnee, Integer absice) {
         this.ordonnee = ordonnee;
+        this.absice = absice;
     }
 
-    public int getX() {
-        return Integer.parseInt(ordonnee.substring(0, 1));
-    }
-
-    public char getY() {
-        return ordonnee.charAt(0);
-    }
-
-    public void setOrdonnee(String ordonnee) {
-        this.ordonnee = ordonnee;
-    }
-
-    public String getOrdonnee() {
+   public int getOrdonne(){
         return ordonnee;
-    }
-}
+   }
 
+    public int getAbsice() {
+        return absice;
+    }
+
+    public void setOrdonnee(Integer ordonnee) {
+        this.ordonnee = 0;
+    }
+
+    public void setAbsice(Integer ordonnee) {
+        this.ordonnee = 0;
+    }
+
+}

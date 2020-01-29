@@ -1,52 +1,30 @@
 package com.company;
 
 import java.util.HashMap;
-import java.util.List;
-import java.util.ArrayList;
 
 public class Plateau {
-    private List<Integer> Absice = new ArrayList<Integer>();
-    private List<Character> Ordonnee = new ArrayList<Character>();
-    HashMap<String, Integer> ListeCases = new HashMap<String, Integer>();
+    private Bateau bateau;
+    private Integer tailleBateau;
+    private static HashMap<Integer, Integer> ListeCoordoTest = new HashMap<>();
 
-    public Plateau(List<Integer> absice, List<Character> ordonnee, HashMap<String, Integer> listecases) {
-        Absice = absice;
-        Ordonnee = ordonnee;
-        ListeCases = listecases;
+    public Bateau getBateau() {
+        return bateau;
     }
 
-    public boolean caseExist(Coordonees cordo) {
-        if (this.getOrdonnee().contains(cordo.getY()) && this.getAbsice().contains(cordo.getX())) {
-            return true;
-        } else {
-            return false;
-        }
+    public void setBateau(Bateau bateau) {
+        this.bateau = bateau;
     }
 
-    public List<Integer> getAbsice() {
-        return Absice;
+    public Integer getTailleBateau() {
+        return tailleBateau;
     }
 
-    public List<Character> getOrdonnee() {
-        return Ordonnee;
+    public void setTailleBateau(Integer tailleBateau) {
+        this.tailleBateau = tailleBateau;
     }
 
-    public void setAbsice(List<Integer> absice) {
-        for (int j = 1; j < 10; j++) {
-            absice.add(j);
-        }
-    }
+    public static void getListeCoordo() {
 
-    public void setOrdonnee(List<Character> ordonnee) {
-        for (List<Character> ordonnee: o) {
-            
-        }
-        for (int i = 1; i != 10; i++) {
-            ordonnee.add((char) ('A' + i));
-        }
-    }
-
-    public HashMap<String, Integer> getListeCases() {
-        return ListeCases;
+        ListeCoordoTest.putAll();
     }
 }

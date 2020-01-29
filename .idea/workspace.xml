@@ -2,13 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="238a5b43-71f0-485c-aa43-4dfe959ff65b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/Plateau.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/ModeleBoat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/Bateau$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/Bateau.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/com/company/Bateau.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/Case.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/Coordonees.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/com/company/Coordonees.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled104/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled104/com/company/Plateau.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Bateau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Bateau.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Cases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Case.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Case.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Coordonees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Coordonees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Orientation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Orientation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Plateau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Plateau.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +36,7 @@
   <component name="ProjectId" id="1UQ7R9NB5h7JXIcnoN2qh3ToZQL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.capture" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -85,31 +91,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Coordonees.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Bateau.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/com/company/Coordonees.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-    <watches-manager>
-      <configuration name="Application">
-        <watch expression="i" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>
